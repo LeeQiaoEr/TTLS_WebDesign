@@ -124,20 +124,18 @@ body {
 }
 
 /* __________________________________________________________________________Selection page_________________________________________________________________________________________________ */
-.first_topic {
-  font-weight: bold;
-  color: #3B3D3E;
-  font-family: 'Maven Pro', sans-serif;
-  padding-bottom: 4.5rem;
-}
+  .first_topic {
+    font-weight: bold;
+    color: #3B3D3E;
+    font-family: 'Maven Pro', sans-serif;
+  }
 
-.sec_topic {
-  font-weight: bold;
-  text-align: right;
-  color: #3B3D3E;
-  font-family: 'Maven Pro', sans-serif;
-  padding-bottom: 4.5rem;
-}
+  .sec_topic {
+    font-weight: bold;
+    color: #3B3D3E;
+    font-family: 'Maven Pro', sans-serif;
+
+  }
 
 .selectionpage {
   padding: 0;
