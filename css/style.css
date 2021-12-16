@@ -300,8 +300,49 @@ body {
 }
 
 /* Service button */
-.allbuttons{
-  margin-top: 10vw;
+.card {
+
+  justify-content: center;
+  background: #F3E3D7;
+  border: 3px solid #FFCB4F;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+}
+
+.rounded {
+  border-radius: 2.25rem !important;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 0.75rem 1rem;
+}
+
+.iconbtn {
+  margin-top: 6rem;
+}
+
+.service-text {
+  display: flex;
+  justify-content: center;
+  font-family: 'Maven Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #3B3D3E;
+  margin-top: 3.5rem;
+  text-decoration: none;
+  border: none;
+  text-decoration: none;
+  background-color: #F3E3D7;
+}
+
+a{
+  text-decoration: none;
 }
 
 #myImg {
@@ -314,41 +355,6 @@ body {
   opacity: 0.3;
 }
 
-/* Hide smallsercivebtn when screen small than 320px, show when is wider than 320px*/
-.goodbye-smallservicebtn {
-  display: none;
-}
-
-
-@media (min-width: 375px) and (max-width: 812px) {
-  .goodbye-smallservicebtn {
-    display: block;
-  }
-}
-
-@media (min-width: 1440px) and (max-width: 1600px) {
-  .goodbye-smallservicebtn {
-    display: none;
-  }
-}
-
-/* Show goodbye-bigservicebtn  when screen small than 320px, hide when is wider than 320px*/
-.goodbye-bigservicebtn {
-  display: none;
-}
-
-
-@media (min-width: 375px) and (max-width: 812px) {
-  .goodbye-bigservicebtn  {
-    display: none;
-  }
-}
-
-@media (min-width: 1440px) and (max-width: 1600px) {
-  .goodbye-bigservicebtn {
-    display: block;
-  }
-}
 
 /* Footer */
 .footerBackground-Row1 {
