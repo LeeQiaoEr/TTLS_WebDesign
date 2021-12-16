@@ -42,7 +42,7 @@
                   <a class="nav-link" href="review.html">REVIEW</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="patientform.html">PATIENT</a>
+                  <a class="nav-link active" href="ownerform.html">PATIENT</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">CONTACT</a>
@@ -93,71 +93,121 @@
     </div>
   </div>
 
-      <!-- content 3 PetInformation Title 1-->
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Content Goes Here in Column -->
-          <div class="row-lg-12">
-            <h2 class="openingtime">NEW PATIENT FORM</h2>
-            <p class="eachandevery">Owner Information</p>
+     <!-- content 3 Information Title 1-->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Content Goes Here in Column -->
+      <div class="row-lg-12">
+        <h2 class="openingtime">NEW PATIENT FORM</h2>
+        <p class="eachandevery">Owner Information</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Patient Form-->
+  <div class="container">
+    <!-- ONCE USER SUBMIT IT JUMP TO SUCCESS PAGE -->
+      <script type="text/javascript">
+        var submitted = false;
+      </script>
+      <iframe name="hidden_frame" id="hidden_frame" style="display:none;" onload="if(submitted) {window.location='petinformation.html';}"></iframe>
+
+    <div class="col lg-12">
+      <div class="wrapper">
+        <form novalidate action="https://docs.google.com/forms/d/e/1FAIpQLSf8tNZRUsMVPnrFacY54ybLooUnIxgj2hikZqKt0D4T9m3kQw/formResponse" method="post" target="hidden_frame" onsubmit="submitted=true;">
+
+          <div class="forminputfield">
+            <label>NAME</label>
+            <input type="text" class="input" name="entry.1375218925" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
-        </div>
+
+          <div class="forminputfield">
+            <label>EMAIL</label>
+            <input type="text" class="input" name="entry.1397302574" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>MOBILE PHONE</label>
+            <input type="text" class="input" name="entry.745509345" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>ADDRESS</label>
+            <input type="text" class="input" name="entry.906944629" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>CITY</label>
+            <input type="text" class="input" name="entry.1298659767" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>STATE</label>
+            <input type="text" class="input" name="entry.263798236" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>ZIP/POSTAL CODE</label>
+            <input type="text" class="input" name="entry.1291511280" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+
+          <div class="forminputfield">
+            <label>EMENCENY MOBILE PHONE</label>
+            <input type="text" class="input" name="entry.959648957" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>DATE</label>
+            <input type="date" class="input" name="entry.1393419289" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="forminputfield">
+            <label>TIME</label>
+            <input type="time" class="input" name="entry.1845721171" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
       </div>
 
-      <!-- Patient Form-->
-      <div class="container">
-        <div class="col lg-12">
-          <div class="wrapper">
-            <div class="form">
-              <div class="forminputfield">
-                <label>NAME</label>
-                <input type="text" class="input">
-              </div>
-              <div class="forminputfield">
-                <label>EMAIL</label>
-                <input type="text" class="input">
-              </div>
-              <div class="forminputfield">
-                <label>MOBILE PHONE</label>
-                <input type="text" class="input">
-              </div>
-              <div class="forminputfield">
-                <label>ADDRESS</label>
-                <input type="text" class="input">
-              </div>
-              <div class="forminputfield">
-                <label>CITY</label>
-                <input type="text" class="input">
-              </div>
-              <div class="forminputfield">
-                <label>EMENCENY MOBILE PHONE</label>
-                <input type="text" class="input">
-              </div>
-              <div class="form">
-                <div class="forminputfield">
-                  <label>STATE</label>
-                  <input type="text" class="input">
-                </div>
-              </div>
-              <div class="form">
-                <div class="forminputfield">
-                  <label>DATE</label>
-                  <input type="date" class="input">
-                </div>
-              </div>
-              <div class="form">
-                <div class="forminputfield">
-                  <label>TIME</label>
-                  <input type="time" class="input">
-                </div>
-              </div>
+      <div class="row">
+        <div class="row Formnext_button ">
+          <button type="submit" class="btn btn-formnext">NEXT</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
 
 
-              <div class="forminputfield">
-                <input type="submit" value="NEXT" class="next_btn" href="patientform.html">
-              </div>
-            </div>
-          </div>
+
+  <!-- Form Filed Validation -->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict';
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation');
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+
+
+</body>
+
+</html>
+
 
           <!-- START FOOTER  -->
           <!-- FOOTER BIG ROW 1 START-->
