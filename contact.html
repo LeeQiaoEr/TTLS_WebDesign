@@ -8,14 +8,15 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/navbar-top-fixed.css">
+  <link rel="stylesheet" href="css/responsivecontact.css">
 
-  <title>Contact</title>
+  <title>Vets for Pets Animal Clinic (VPAC)</title>
+
 </head>
 
 <body>
-
   <!--Content 1 Nav Bar -->
   <div class="container">
     <div class="row long-navbar">
@@ -109,7 +110,7 @@
   </div>
 
 
-  <!-- content 5 Contact Part 1-change -->
+  <!-- content 5 Contact Part 1 -->
   <div class="container-fluid">
     <div class="row">
       <!-- Content Goes Here in Column -->
@@ -180,6 +181,11 @@
 
   <!-- content 7 Contact Part 2 -->
   <div class="container-fluid">
+    <!-- ONCE USER SUBMIT IT JUMP TO THANKYOU PAGE -->
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe name="hidden_frame" id="hidden_frame" style="display:none;" onload="if(submitted) {window.location='submited.html';}"></iframe>
     <div class="row-lg-12">
       <!-- Content Goes Here in Column -->
       <div class="row">
@@ -187,170 +193,194 @@
           <img src="image/ContactPage_Pic03.png" alt="" class="responsive-3">
         </div>
         <div class="col-lg-6">
-          <div class="row form">
+
+          <form novalidate action="https://docs.google.com/forms/d/e/1FAIpQLScvxOGyjQq8WpxCQDgepWsjkm503mnOr6whOpTNOh-5Hd5A-w/formResponse" method="post" target="hidden_frame" onsubmit="submitted=true;">
+
             <div class="row form-01">
               <div class="mb-3">
-                <input class="form-control form-control-lg" type="text" placeholder="NAME" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" name="entry.588515549" type="text" placeholder="NAME" aria-label=".form-control-lg example">
               </div>
-            </div>
-            <div class="row form-02">
+
+
               <div class="mb-3">
-                <input class="form-control form-control-lg" type="text" placeholder="EMAIL" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" name="entry.1078656962" type="text" placeholder="EMAIL" aria-label=".form-control-lg example">
               </div>
-            </div>
-            <div class="row form-03">
+
+
               <div class="mb-3">
-                <input class="form-control form-control-lg" type="text" placeholder="MOBILE" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" name="entry.762791987" type="text" placeholder="MOBILE" aria-label=".form-control-lg example">
               </div>
-            </div>
-            <div class="row form-04">
+
+
               <div class="mb-3">
-                <input class="form-control form-control-lg" type="text" placeholder="WHAT CAN WE HELP YOU?" aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" name="entry.1849756263" type="text" placeholder="WHAT CAN WE HELP YOU?" aria-label=".form-control-lg example">
               </div>
             </div>
 
             <br>
 
-            <div class="row Submitbutton ">
-              <button type="button" class="btn btn-warning">SUBMIT</button>
+              <button type="submit" class="btn btn-warning">SUBMIT</button>
+
+        </form>
+
+        </div>
+
+        <!-- Form Filed Validation -->
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (() => {
+            'use strict';
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation');
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms).forEach((form) => {
+              form.addEventListener('submit', (event) => {
+                if (!form.checkValidity()) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          })();
+        </script>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+
+<footer style="margin:0px !important">
+  <!-- START FOOTER  -->
+    <!-- FOOTER BIG ROW 1 START-->
+    <div class="row footerBackground-Row1">
+      <div class=" col-sm-12 col-lg-6 ">
+        <!-- PLACE TITLE START -->
+        <div class="col-lg-12 ">
+          <h4>Vets for Pets Animal Clinic Kuchai Lama</h4>
+          <p class="footercontain">No. 49, Jalan Kuchai Lama, Taman Lian Hoe,58100, Kuala Lumpur, Malaysia</p>
+        </div>
+        <!-- PLACE TITLE END -->
+        <div class=" col-lg-12">
+          <!-- ICON + LINK START SOCIAL ROW 1  -->
+          <div class="row">
+            <div class=" col-sm-2 col-lg-2 ">
+              <img src="image/email.png" width="30" ;height="30" ;alt="email">
+            </div>
+            <div class=" col-sm-10 col-lg-10">
+              <p>info@vpac.com.my</p>
             </div>
           </div>
 
+          <!-- ICON + LINK START SOCIAL ROW 2  -->
+          <div class="row">
+            <div class=" col-sm-2 col-lg-2 ">
+              <img src="image/phone.png" width="30" ;height="30" ;alt="email">
+            </div>
+            <div class=" col-sm-10 col-lg-10">
+              <p>+6017-983 5980</p>
+            </div>
+          </div>
 
+          <!-- ICON + LINK START SOCIAL ROW 3  -->
+          <div class="row">
+            <div class=" col-sm-2 col-lg-2 ">
+              <img src="image/facebook.png" width="30" ;height="30" ;alt="email">
+            </div>
+
+            <div class=" col-sm-10 col-lg-10">
+              <p>Welcome to check our Facebook page</p>
+            </div>
+          </div>
+          <!-- ICON + LINK END -->
+        </div>
+      </div>
+      <!-- DOG START -->
+      <div class=" col-sm-12 col-lg-6"></div>
+      <!-- DOG END -->
+    </div>
+    <!-- FOOTER BIG ROW 1 END-->
+
+    <!-- FOOTER BIG ROW 2 START-->
+    <div class="row footerBackground-Row1">
+      <div class=" col-sm-12 col-lg-6 ">
+        <!-- PLACE TITLE START -->
+        <div class=" col-lg-12 ">
+          <h4>Vets for Pets Animal Clinic Solaris Mont Kiara</h4>
+          <p class="footercontain2">No. 5,Jalan Solaris 4, Solaris Mont Kiara, 50480, Kuala Lumpur, Malaysia</p>
+        </div>
+        <!-- PLACE TITLE END -->
+        <div class=" col-lg-12">
+          <!-- ICON + LINK START SOCIAL ROW 1  -->
+          <div class="row">
+            <div class=" col-sm-2 col-lg-2 ">
+              <img src="image/email.png" width="30" ;height="30" ;alt="email">
+            </div>
+            <div class="col-sm-10 col-lg-10">
+              <p>enquiry@vpac.com.my</p>
+            </div>
+          </div>
+
+          <!-- ICON + LINK START SOCIAL ROW 2  -->
+          <div class="row">
+            <div class=" col-sm-2 col-lg-2 ">
+              <img src="image/phone.png" width="30" ;height="30" ;alt="email">
+            </div>
+            <div class="col-sm-10 col-lg-10">
+              <p>+6014-919 4980</p>
+            </div>
+          </div>
+
+          <!-- ICON + LINK START SOCIAL ROW 3  -->
+          <div class="row">
+            <div class=" col-sm-2 col-lg-2 ">
+              <img src="image/facebook.png" width="30" ;height="30" ;alt="email">
+            </div>
+
+            <div class=" col-sm-10 col-lg-10">
+              <p>Welcome to check our Facebook page</p>
+            </div>
+          </div>
+          <!-- ICON + LINK END -->
+        </div>
+      </div>
+      <div class=" col-sm-12 col-lg-6">
+        <div class=" col-lg-12">
+          <p>Monday - Friday </p>
+          <p>10:00 AM - 7:00 PM </p>
+          <p class="branch">Solaris Mont Kiara branch closed on every Monday</p>
+        </div>
+        <div class=" col-lg-12">
+          <p>Saturday - Sunday </p>
+          <p>10:00 AM - 3:00 PM </p>
+        </div>
+        <div class=" col-lg-12">
+          <p>Public holiday </p>
+          <p>10:00 AM - 2:00PM or closed by notice</p>
+        </div>
+        <div class=" col-lg-12">
+          <button style="background-color:#FFCB4F;" type="button" class="contact_btn">Contact us</button>
         </div>
 
       </div>
     </div>
-  </div>
-
-  <br>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <!-- START FOOTER  -->
-  <!-- FOOTER BIG ROW 1 START-->
-  <div class="row footerBackground-Row1">
-    <div class=" col-sm-12 col-lg-6 ">
-      <!-- PLACE TITLE START -->
-      <div class="col-lg-12 ">
-        <h4 style="width:300px">Vets for Pets Animal Clinic Kuchai Lama</h4>
-        <p class="footercontain">No. 49, Jalan Kuchai Lama, Taman Lian Hoe,58100, Kuala Lumpur, Malaysia</p>
-      </div>
-      <!-- PLACE TITLE END -->
-      <div class=" col-lg-12">
-        <!-- ICON + LINK START SOCIAL ROW 1  -->
-        <div class="row">
-          <div class=" col-sm-2 col-lg-2 ">
-            <img src="image/email.png" width="30" ;height="30" ;alt="email">
-          </div>
-          <div class=" col-sm-10 col-lg-10">
-            <p style="width:300px">info@vpac.com.my</p>
-          </div>
-        </div>
-
-        <!-- ICON + LINK START SOCIAL ROW 2  -->
-        <div class="row">
-          <div class=" col-sm-2 col-lg-2 ">
-            <img src="image/phone.png" width="30" ;height="30" ;alt="email">
-          </div>
-          <div class=" col-sm-10 col-lg-10">
-            <p style="width:300px">+6017-983 5980</p>
-          </div>
-        </div>
-
-        <!-- ICON + LINK START SOCIAL ROW 3  -->
-        <div class="row">
-          <div class=" col-sm-2 col-lg-2 ">
-            <img src="image/facebook.png" width="30" ;height="30" ;alt="email">
-          </div>
-
-          <div class=" col-sm-10 col-lg-10">
-            <p style="width:300px">Welcome to check our Facebook page</p>
-          </div>
-        </div>
-        <!-- ICON + LINK END -->
-      </div>
-    </div>
-    <!-- DOG START -->
-    <div class=" col-sm-12 col-lg-6"></div>
-    <!-- DOG END -->
-  </div>
-  <!-- FOOTER BIG ROW 1 END-->
-
-  <!-- FOOTER BIG ROW 2 START-->
-  <div class="row footerBackground-Row1">
-    <div class=" col-sm-12 col-lg-6 ">
-      <!-- PLACE TITLE START -->
-      <div class=" col-lg-12 ">
-        <h4 style="width:300px">Vets for Pets Animal Clinic Solaris Mont Kiara</h4>
-        <p class="footercontain2">No. 5,Jalan Solaris 4, Solaris Mont Kiara, 50480, Kuala Lumpur, Malaysia</p>
-      </div>
-      <!-- PLACE TITLE END -->
-      <div class=" col-lg-12">
-        <!-- ICON + LINK START SOCIAL ROW 1  -->
-        <div class="row">
-          <div class=" col-sm-2 col-lg-2 ">
-            <img src="image/email.png" width="30" ;height="30" ;alt="email">
-          </div>
-          <div class="col-sm-10 col-lg-10">
-            <p style="width:300px">enquiry@vpac.com.my</p>
-          </div>
-        </div>
-
-        <!-- ICON + LINK START SOCIAL ROW 2  -->
-        <div class="row">
-          <div class=" col-sm-2 col-lg-2 ">
-            <img src="image/phone.png" width="30" ;height="30" ;alt="email">
-          </div>
-          <div class="col-sm-10 col-lg-10">
-            <p style="width:300px">+6014-919 4980</p>
-          </div>
-        </div>
-
-        <!-- ICON + LINK START SOCIAL ROW 3  -->
-        <div class="row">
-          <div class=" col-sm-2 col-lg-2 ">
-            <img src="image/facebook.png" width="30" ;height="30" ;alt="email">
-          </div>
-
-          <div class=" col-sm-10 col-lg-10">
-            <p style="width:300px">Welcome to check our Facebook page</p>
-          </div>
-        </div>
-        <!-- ICON + LINK END -->
-      </div>
-    </div>
-    <div class=" col-sm-12 col-lg-6">
-      <div class=" col-lg-12">
-        <p style="width:300px">Monday - Friday </p>
-        <p style="width:300px">10:00 AM - 7:00 PM </p>
-        <p class="branch">Solaris Mont Kiara branch closed on every Monday</p>
-      </div>
-      <div class=" col-lg-12">
-        <p style="width:300px">Saturday - Sunday </p>
-        <p style="width:300px">10:00 AM - 3:00 PM </p>
-      </div>
-      <div class=" col-lg-12">
-        <p style="width:300px">Public holiday </p>
-        <p style="width:300px">10:00 AM - 2:00PM or closed by notice</p>
-      </div>
-      <div class=" col-lg-12">
-        <button style="background-color:#FFCB4F;" type="button" class="contact_btn">Contact us</button>
-      </div>
-
-    </div>
-  </div>
-  <!-- FOOTER BIG ROW 2 END-->
-  <!-- END FOOTER  -->
-
-</body>
+    <!-- FOOTER BIG ROW 2 END-->
+    <!-- END FOOTER  -->
+</footer>
 
 </html>
