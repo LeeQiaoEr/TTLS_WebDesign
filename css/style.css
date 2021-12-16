@@ -355,29 +355,33 @@ a{
 
 
 /* Footer */
-.footerBackground-Row1 {
-    background-color: #FFEAB8;
+.footerBackground-Row1
+{
+    background-color:#FFEAB8;
+}
 
-  }
-
+.row{
+  margin: 0px;
+}
 
 .contact_btn
-{ font-family: 'Maven Pro', sans-serif;  font-size: 24px;  font-weight: 900;  font-style: normal;  line-height: 21px;
-
-   border-width: 0px ; width: 338px;  height: 55px;  letter-spacing: .1px;  color: #636363;
+{
+    font-family: 'Maven Pro',
+    sans-serif;  font-size: 24px;  font-weight: 900px;  font-style: normal;  line-height: 21px;  width: 200px;  height: 55px;  letter-spacing: 1px;  color: #636363;  border-width: 0 ;
 }
 
-.footercontain{
-  font-size: 1rem;
-  width: 350px;
+.footercontain
+{
+    font-size: 1rem;
 }
-.footercontain2{
-  font-size: 1rem;
-  width: 300px;
+.footercontain2
+{
+    font-size: 1rem;
 }
 
-.branch{
-  font-size: 13px;
+.branch
+{
+    font-size: 13px;
 }
 
 
