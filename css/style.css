@@ -241,18 +241,34 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: auto;
+  height: 200%;
+  object-fit: cover;
+  object-position: top;
 }
 
 
 .whichservice {
   display: block;
-  font-size: 4vw;
+  font-size: 12vw;
   font-family: 'Maven Pro', sans-serif;
   font-style: normal;
   font-weight: 900;
   color: #FFCB4F;
   letter-spacing: -1.5px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .whichservice {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .whichservice {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: 40em) {
@@ -271,6 +287,7 @@ body {
     margin-top: 7rem;
   }
 }
+
 
 /* Topic */
 .ourservicepage {
