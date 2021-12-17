@@ -1329,7 +1329,7 @@ margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-i
 
 .submitted_button
 { font-family: 'Maven Pro', sans-serif;  font-size: 3vw;  font-weight: 900;  font-style: normal;  line-height: 21px;
- border-width: 0px; margin-top: 20px;   width: 90vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
+ border-width: 0px; margin-top: 20px;   width: 80vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
 }
 
 .img_submitted{
@@ -1347,14 +1347,14 @@ margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-i
 
 
 .success_register
-{ font-family: 'Maven Pro', sans-serif;  font-size:5vw;  font-weight: 900;
+{ font-family: 'Maven Pro', sans-serif;  font-size:5vw;  font-weight: 800;
 
 margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
 }
 
 .congratulations_btn
 { font-family: 'Maven Pro', sans-serif;  font-size: 3vw;  font-weight: 900;  font-style: normal;  line-height: 21px;
- border-width: 0px; margin-top: 20px;   width: 90vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
+ border-width: 0px; margin-top: 20px;   width: 80vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
 }
 
 .img_congratulations{
