@@ -2,10 +2,9 @@ body {
   min-height: 75rem;
   padding-top: 4.5rem;
   background-color: #f6ece3;
-
 }
 
-/* ___________________________________________________________________________Navigation Bar_________________________________________________________________________________________________ */
+/* __________________________________________________________________________Navigation Bar_________________________________________________________________________________________________ */
 /* longnav */
 .long-navbar {
   display: none;
@@ -99,7 +98,6 @@ body {
 
 /* __________________________________________________________________________Welcome page___________________________________________________________________________________________________ */
 
-
 .vets
 { font-family: 'Maven Pro', sans-serif;  font-size: 6vw; font-weight: bold;  font-style: normal;  line-height: 103px;
 
@@ -123,7 +121,9 @@ body {
  width: 95vw;  height: 40vw;  border: 3px solid #fff;
 }
 
-/* __________________________________________________________________________Selection page_________________________________________________________________________________________________ */
+/* __________________________________________________________________________Selection Page_________________________________________________________________________ */
+
+/* Selection Page */
   .first_topic {
     font-weight: bold;
     color: #3B3D3E;
@@ -137,452 +137,469 @@ body {
 
   }
 
-.selectionpage {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #f6ece3;
-  overflow: hidden;
-}
+  .selectionpage {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f6ece3;
+    overflow: hidden;
+  }
 
-.selection_container {
-  position: relative;
-  width: 250px;
-  height: 400px;
-  margin-left: -15px;
-  left: 5%;
-}
+  .selection_container {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin-left: -15px;
+    left: 5%;
+  }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 400px;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
-  border-radius: 25px;
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    border-radius: 25px;
+  }
 
-.container:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, .3);
-  border-radius: 25px;
-}
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 25px;
+  }
 
-.img_selection {
-  width: 300px;
-  height: 500px;
-  left: 0;
-}
+  .img_selection {
+    width: 300px;
+    height: 500px;
+    left: 0;
+  }
 
-.title {
-  position: absolute;
-  width: 250px;
-  left: 0;
-  top: 120px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFCB4F;
-  z-index: 1;
-  transition: top .5s ease;
-}
+  .title {
+    position: absolute;
+    width: 250px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFCB4F;
+    z-index: 1;
+    transition: top .5s ease;
+  }
 
-.container:hover .title {
-  top: 90px;
-}
+  .container:hover .title {
+    top: 90px;
+  }
 
-.button {
-  position: absolute;
-  width: 250px;
-  left: 0;
-  top: 180px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity .35s ease;
-  ;
-}
+  .button {
+    position: absolute;
+    width: 250px;
+    left: 0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    ;
+  }
 
-.button a {
-  width: 200px;
-  padding: 12px 48px;
-  text-align: center;
-  color: white;
-  border: solid 2px white;
-  z-index: 1;
-}
+  .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  }
 
-.container:hover .button {
-  opacity: 1;
-}
+  .container:hover .button {
+    opacity: 1;
+  }
 
-/* __________________________________________________________________________Service page___________________________________________________________________________________________________ */
-/* Carousel */
-.carousel {
-  margin-bottom: 4rem;
-}
+  /* __________________________________________________________________________Service page___________________________________________________________________________________________________ */
 
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
+  /* Carousel */
+  .carousel {
+    margin-bottom: 4rem;
+  }
 
-.carousel-item {
-  height: 45rem;
-}
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
 
-.carousel-item>img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 200%;
-  object-fit: cover;
-  object-position: top;
-}
+  .carousel-item {
+    height: 45rem;
+  }
+
+  .carousel-item>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    object-position: top;
+  }
 
 
-.whichservice {
-  display: block;
-  font-size: 12vw;
-  font-family: 'Maven Pro', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  color: #FFCB4F;
-  letter-spacing: -1.5px;
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
   .whichservice {
-    font-size: 80px;
+    display: block;
+    font-size: 12vw;
+    font-family: 'Maven Pro', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #FFCB4F;
+    letter-spacing: -1.5px;
   }
-}
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .whichservice {
-    font-size: 60px;
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+  @media screen and (min-width: 601px) {
+    .whichservice {
+      font-size: 80px;
+    }
   }
-}
 
-@media (min-width: 40em) {
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .whichservice {
+      font-size: 60px;
+    }
   }
-  .featurette-heading {
-    font-size: 50px;
+
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+    .featurette-heading {
+      font-size: 50px;
+    }
   }
-}
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
   }
-}
+
+  /* Topic */
+  .ourservicepage {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 7vw;
+    color: #FFCB4F;
+    letter-spacing: -1.5px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10vw;
+  }
+
+  .servicepage {
+    color: #3B3D3E;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -4vw;
+  }
+
+  /* Service button */
+  /* .allbuttons{
+    margin-top: 10vw;
+  }
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {
+    opacity: 0.3;
+  } */
+  .card {
+
+    justify-content: center;
+    background: #F3E3D7;
+    border: 3px solid #FFCB4F;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+  }
+
+  .rounded {
+    border-radius: 2.25rem !important;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 0.75rem 1rem;
+  }
+
+  .iconbtn {
+    margin-top: 6rem;
+  }
+
+  .service-text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #3B3D3E;
+    margin-top: 3.5rem;
+    text-decoration: none;
+    border: none;
+    text-decoration: none;
+    background-color: #F3E3D7;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {
+    opacity: 0.3;
+  }
 
 
-/* Topic */
-.ourservicepage {
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
-  font-size: 7vw;
-  color: #FFCB4F;
-  letter-spacing: -1.5px;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 10vw;
-}
-
-.servicepage {
-  color: #3B3D3E;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  display: flex;
-  align-items: flex-end;
-  margin-top: -4vw;
-}
-
-/* Service button */
-.card {
-
-  justify-content: center;
-  background: #F3E3D7;
-  border: 3px solid #FFCB4F;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 40px;
-}
-
-.rounded {
-  border-radius: 2.25rem !important;
-}
-
-.card-body {
-  flex: 1 1 auto;
-  padding: 0.75rem 1rem;
-}
-
-.iconbtn {
-  margin-top: 6rem;
-}
-
-.service-text {
-  display: flex;
-  justify-content: center;
-  font-family: 'Maven Pro', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2vw;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.1px;
-  color: #3B3D3E;
-  margin-top: 3.5rem;
-  text-decoration: none;
-  border: none;
-  text-decoration: none;
-  background-color: #F3E3D7;
-}
-
-a{
-  text-decoration: none;
-}
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {
-  opacity: 0.3;
-}
+  /* Hide smallsercivebtn when screen small than 320px, show when is wider than 320px*/
+  .goodbye-smallservicebtn {
+    display: none;
+  }
 
 
-/* Footer */
-.footerBackground-Row1
-{
-    background-color:#FFEAB8;
-}
+  @media (min-width: 375px) and (max-width: 812px) {
+    .goodbye-smallservicebtn {
+      display: block;
+    }
+  }
 
-.row{
-  margin: 0px;
-}
+  @media (min-width: 1440px) and (max-width: 1600px) {
+    .goodbye-smallservicebtn {
+      display: none;
+    }
+  }
 
-.contact_btn
-{
-    font-family: 'Maven Pro',
-    sans-serif;  font-size: 24px;  font-weight: 900px;  font-style: normal;  line-height: 21px;  width: 200px;  height: 55px;  letter-spacing: 1px;  color: #636363;  border-width: 0 ;
-}
-
-.footercontain
-{
-    font-size: 1rem;
-}
-.footercontain2
-{
-    font-size: 1rem;
-}
-
-.branch
-{
-    font-size: 13px;
-}
+  /* Show goodbye-bigservicebtn  when screen small than 320px, hide when is wider than 320px*/
+  .goodbye-bigservicebtn {
+    display: none;
+  }
 
 
-/*----------------------------Surgery Procedures----------------------------*/
-/* Topic */
-.ourservice {
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
-  font-size: 7vw;
-  color: #FFCB4F;
-  letter-spacing: -1.5px;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 22px;
-}
+  @media (min-width: 375px) and (max-width: 812px) {
+    .goodbye-bigservicebtn  {
+      display: none;
+    }
+  }
 
-.service {
-  color: #3B3D3E;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  display: flex;
-  align-items: flex-end;
-  margin-top: -3vw;
-}
+  @media (min-width: 1440px) and (max-width: 1600px) {
+    .goodbye-bigservicebtn {
+      display: block;
+    }
+  }
 
-.borderbg {
-  background-color: #F3E3D7;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-}
+  /*----------------------------Surgery Procedures----------------------------*/
+  /* Topic */
+  .ourservice {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 7vw;
+    color: #FFCB4F;
+    letter-spacing: -1.5px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 22px;
+  }
 
-.icon_surgery{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  .service {
+    color: #3B3D3E;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -3vw;
+  }
 
-.dogtypo{
-  color: #F3E3D7;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
-  font-size: 15vw;
-  letter-spacing: -1.5px;
-}
+  .borderbg {
+    background-color: #F3E3D7;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
 
-.dogdetail_1{
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 3vw;
-  font-weight: 500;
-  color: #000000;
-}
+  .icon_surgery{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 
-.dogdetail_2{
-font-family: 'Maven Pro', sans-serif;
-font-size: 3vw;
-font-weight: 500;
-color: #636363;
-}
+  .dogtypo{
+    color: #F3E3D7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 15vw;
+    letter-spacing: -1.5px;
+  }
 
-.dogdetail_3{
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 2vw;
-  font-weight: 900;
-  color: #8B8B8B;
-}
+  .dogdetail_1{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #000000;
+  }
 
-.cattypo{
-  color: #F3E3D7;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
-  font-size: 15vw;
-  letter-spacing: -1.5px;
-}
-
-.catdetail_1{
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 3vw;
-  font-weight: 500;
-  color: #000000;
-}
-
-.catdetail_2{
+  .dogdetail_2{
   font-family: 'Maven Pro', sans-serif;
   font-size: 3vw;
   font-weight: 500;
   color: #636363;
-}
+  }
 
-.catdetail_3{
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 2vw;
-  font-weight: 900;
-  color: #8B8B8B;
-}
+  .dogdetail_3{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2vw;
+    font-weight: 900;
+    color: #8B8B8B;
+  }
 
-.backbutton {
-  max-width: 25vw;
-  max-height: 3vw;
-  margin-left: 58vw;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
+  .cattypo{
+    color: #F3E3D7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 15vw;
+    letter-spacing: -1.5px;
+  }
 
-.btn-warning {
-  color: #3b3d3e;
-  background-color: #ffeab8;
-  border-color: #ffcb4f;
-  font-size: 2vw;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  border-width: 0.3vw;
-  padding-top: 0.2vw;
-  font-family: 'Maven Pro', sans-serif;
-}
+  .catdetail_1{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #000000;
+  }
 
-/*-----------------------Microchipping--------------------------*/
-.icon_microchipping{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  .catdetail_2{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #636363;
+  }
 
-/*-----------------------Pet--------------------------*/
-.icon_pet{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  .catdetail_3{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2vw;
+    font-weight: 900;
+    color: #8B8B8B;
+  }
 
-/*-----------------------Basic--------------------------*/
-.icon_basic{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  .backbutton {
+    max-width: 25vw;
+    max-height: 3vw;
+    margin-left: 58vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
 
-.rabbittypo{
-  color: #F3E3D7;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
-  font-size: 10vw;
-  letter-spacing: -1.5px;
-}
+  .btn-warning {
+    color: #3b3d3e;
+    background-color: #ffeab8;
+    border-color: #ffcb4f;
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-width: 0.3vw;
+    padding-top: 0.2vw;
+    font-family: 'Maven Pro', sans-serif;
+  }
 
-/*-----------------------Vaccinations--------------------------*/
-.icon_vaccinations{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  /*-----------------------Microchipping--------------------------*/
+  .icon_microchipping{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 
-/*-----------------------Dental Care--------------------------*/
-.icon_dental{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  /*-----------------------Pet--------------------------*/
+  .icon_pet{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 
-.hedgehogtypo{
-  color: #F3E3D7;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 900;
-  font-size: 13vw;
-  letter-spacing: -1.5px;
-}
+  /*-----------------------Basic--------------------------*/
+  .icon_basic{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 
-/*-----------------------Wellness Examination--------------------------*/
-.icon_wellness{
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
+  .rabbittypo{
+    color: #F3E3D7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 10vw;
+    letter-spacing: -1.5px;
+  }
 
+  /*-----------------------Vaccinations--------------------------*/
+  .icon_vaccinations{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  /*-----------------------Dental Care--------------------------*/
+  .icon_dental{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .hedgehogtypo{
+    color: #F3E3D7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 13vw;
+    letter-spacing: -1.5px;
+  }
+
+  /*-----------------------Wellness Examination--------------------------*/
+  .icon_wellness{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 
 /* __________________________________________________________________________About us page___________________________________________________________________________________________________ */
 
@@ -662,8 +679,9 @@ color: #636363;
 }
 
 
-/* __________________________________________________________________________Review CSS_________________________________________________________________________________________________ */
 
+/* __________________________________________________________________________Review Page_________________________________________________________________________________________________ */
+/* responsive css Title */
 .REVIEW {
   font-family: 'Maven Pro', sans-serif;
   font-weight: 900;
@@ -783,6 +801,7 @@ fieldset, label {
 }
 
 
+/* __________________________________________________________________________Next Review Page_________________________________________________________________________________________________ */
 
 /****** Style Star Rating Widget *****/
 .rating {
@@ -842,10 +861,8 @@ fieldset, label {
   font-family: 'Maven Pro', sans-serif;
 }
 
-/* __________________________________________________________________________form page___________________________________________________________________________________________________ */
-
-/* Content 2- Topic Owner New Patient Form*/
-.openingtime {
+/* responsive css Title */
+.REVIEW {
   font-family: 'Maven Pro', sans-serif;
   font-weight: 900;
   font-size: 7vw;
@@ -855,7 +872,7 @@ fieldset, label {
   align-items: flex-end;
 }
 
-.eachandevery {
+.ourpatientsay {
   color: #3B3D3E;
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
@@ -868,8 +885,167 @@ fieldset, label {
   margin-top: -4vw;
 }
 
+/* review- row */
+.card-body {
+  flex: 1 1 auto;
+  padding: 0.75rem 1rem;
+}
 
-/* Content 3-Owner Form*/
+.card-name-text {
+  display: flex;
+  justify-content: center;
+  font-family: Maven Pro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.15vw;
+  line-height: 0.5vw;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #3B3D3E;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  font-family: Maven Pro, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.8vw;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #3B3D3E;
+}
+
+.star {
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  background: #F3E3D7;
+  border: 3px solid #FFCB4F;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+}
+
+.pic-01 {
+  border-radius: 50%;
+  box-shadow: 1px -4px 6px 0px rgb(0 0 0 / 50%);
+}
+
+.rounded {
+  border-radius: 2.25rem !important;
+}
+
+.star2 {
+  margin-top: 0.28rem;
+}
+
+/* ---------------------------- comment system  ---------------------------- */
+.user-name {
+  font-family: Maven Pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: #3B3D3E;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 7vw;
+}
+
+.form-contol-lg {
+  border-radius: 0.25rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.5vw;
+}
+
+.form-control {
+  color: #3B3D3E;
+  border: transparent;
+  padding: 1rem 1rem;
+  font-size: 2vw;
+}
+
+fieldset, label {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating>input {
+  display: none;
+}
+
+.rating>label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating>.half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating>label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating>input:checked~label,
+/* show gold star when clicked */
+.rating:not(:checked)>label:hover,
+/* hover current star */
+.rating:not(:checked)>label:hover~label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+/* lighten current selection */
+.rating>input:checked~label:hover~label {
+  color: #FFED85;
+}
+
+.btn-warning {
+  color: #3b3d3e;
+  background-color: #ffeab8;
+  border-color: #ffcb4f;
+  font-size: 1vw;
+  font-weight: bold;
+  border-width: 0.3vw;
+  padding-top: 0.5vw;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+/* __________________________________________________________________________Patient Page_________________________________________________________________________________________________ */
+
 .wrapper {
   max-width: 800px;
   width: 100%;
@@ -980,7 +1156,7 @@ fieldset, label {
 .p_wrapper{
   max-width: 800px;
   width: 100%;
-  height: 45rem;
+  height: 40rem;
   background: #f6ece3;
   margin: 80px auto;
   padding: 30px;
@@ -989,135 +1165,10 @@ fieldset, label {
   border: 1px solid transparent;
   box-shadow: 0 0 0 40px #F3E3D7,
     inset 0 0 0 0;
-
-
-/* __________________________________________________________________________Selection page___________________________________________________________________________________________________ */
-  .first_topic {
-    font-weight: bold;
-    color: #3B3D3E;
-    font-family: 'Maven Pro', sans-serif;
-    padding-bottom: 4.5rem;
-  }
-
-  .sec_topic {
-    font-weight: bold;
-    text-align: right;
-    color: #3B3D3E;
-    font-family: 'Maven Pro', sans-serif;
-    padding-bottom: 4.5rem;
-  }
-
-  .selectionpage {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #f6ece3;
-    overflow: hidden;
-  }
-
-  .selection_container {
-    position: relative;
-    width: 250px;
-    height: 400px;
-    margin-left: -15px;
-    left: 5%;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 400px;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.5s ease;
-    border-radius: 25px;
-  }
-
-  .container:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, .3);
-    border-radius: 25px;
-  }
-
-  .img_selection {
-    width: 300px;
-    height: 500px;
-    left: 0;
-  }
-
-  .title {
-    position: absolute;
-    width: 250px;
-    left: 0;
-    top: 120px;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFCB4F;
-    z-index: 1;
-    transition: top .5s ease;
-  }
-
-  .container:hover .title {
-    top: 90px;
-  }
-
-  .button {
-    position: absolute;
-    width: 250px;
-    left: 0;
-    top: 180px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-    ;
-  }
-
-  .button a {
-    width: 200px;
-    padding: 12px 48px;
-    text-align: center;
-    color: white;
-    border: solid 2px white;
-    z-index: 1;
-  }
-
-  .container:hover .button {
-    opacity: 1;
-  }
-
-
-/* __________________________________________________________________________success page____________________________________________________________________________________________________ */
-
-.congratulations
-{ font-family: 'Maven Pro', sans-serif;  font-size: 7vw;  font-weight: 900;
-
-  margin-left: 10px; text-align: center; display: flex;  align-items: flex-end;  letter-spacing: -1.5px;  color: #ffcb4f;
 }
 
+/* __________________________________________________________________________Contact Page_________________________________________________________________________________________________ */
 
-.success_register
-{ font-family: 'Maven Pro', sans-serif;  font-size:5vw;  font-weight: 900;
-
-margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
-}
-
-.congratulations_btn
-{ font-family: 'Maven Pro', sans-serif;  font-size: 3vw;  font-weight: 900;  font-style: normal;  line-height: 21px;
- border-width: 0px; margin-top: 20px;   width: 90vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
-}
-
-.img_congratulations{
-  display: block;
-}
-
-
-/* __________________________________________________________________________Contact CSS_________________________________________________________________________________________________ */
 .openingtime {
   font-family: 'Maven Pro', sans-serif;
   font-weight: 900;
@@ -1260,7 +1311,7 @@ margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-i
   font-family: 'Maven Pro', sans-serif;
 }
 
-/* __________________________________________________________________________Thankyou CSS_________________________________________________________________________________________________ */
+/* __________________________________________________________________________Submited Page_________________________________________________________________________________________________ */
 
 /* start css */
 .submited
@@ -1286,30 +1337,70 @@ margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-i
 
 }
 
+/* __________________________________________________________________________Congratulation Page_________________________________________________________________________________________________ */
+/* start css */
+.congratulations
+{ font-family: 'Maven Pro', sans-serif;  font-size: 7vw;  font-weight: 900;
 
-/* __________________________________________________________________________Footer CSS_________________________________________________________________________________________________ */
+  margin-left: 10px; text-align: center; display: flex;  align-items: flex-end;  letter-spacing: -1.5px;  color: #ffcb4f;
+}
 
-.footerBackground-Row1 {
-    background-color: #FFEAB8;
 
-  }
+.success_register
+{ font-family: 'Maven Pro', sans-serif;  font-size:5vw;  font-weight: 900;
 
+margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
+}
+
+.congratulations_btn
+{ font-family: 'Maven Pro', sans-serif;  font-size: 3vw;  font-weight: 900;  font-style: normal;  line-height: 21px;
+ border-width: 0px; margin-top: 20px;   width: 90vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
+}
+
+.img_congratulations{
+  display: block;
+}
+/*--------------------------------------Register Success Page------------------------>*/
+.contact_btn2
+{ font-family: 'Maven Pro', sans-serif;  font-size: 4vw;  font-weight: 900;  font-style: normal;  line-height: 21px;
+ border-width: 0px; margin-top: 20px;  margin-left: 14px;  width: 80vw;  height: 5vw;  letter-spacing: .1px;  color: #636363;
+}
+
+.img{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+
+/* __________________________________________________________________________footer___________________________________________________________________________________________________ */
+
+.footerBackground-Row1
+{
+    background-color:#FFEAB8;
+
+}
+
+.row{
+  margin: 0px;
+}
 
 .contact_btn
-{ font-family: 'Maven Pro', sans-serif;  font-size: 24px;  font-weight: 900;  font-style: normal;  line-height: 21px;
-
-   border-width: 0px ; width: 338px;  height: 55px;  letter-spacing: .1px;  color: #636363;
+{
+    font-family: 'Maven Pro',
+    sans-serif;  font-size: 24px;  font-weight: 900px;  font-style: normal;  line-height: 21px;  width: 200px;  height: 55px;  letter-spacing: 1px;  color: #636363;  border-width: 0 ;
 }
 
-.footercontain{
-  font-size: 1rem;
-  width: 350px;
+.footercontain
+{
+    font-size: 1rem;
 }
-.footercontain2{
-  font-size: 1rem;
-  width: 300px;
+.footercontain2
+{
+    font-size: 1rem;
 }
 
-.branch{
-  font-size: 13px;
+.branch
+{
+    font-size: 13px;
 }
