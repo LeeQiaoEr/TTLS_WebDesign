@@ -1322,9 +1322,9 @@ h1 {
 
 
 .success_comment
-{ font-family: 'Maven Pro', sans-serif;  font-size:3vw;  font-weight: 700;
+{ font-family: 'Maven Pro', sans-serif;  font-size:3vw;  font-weight: 800;
 
-margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
+margin-top: 60px; margin-left: 15px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
 }
 
 .submitted_button
@@ -1347,9 +1347,9 @@ margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-i
 
 
 .success_register
-{ font-family: 'Maven Pro', sans-serif;  font-size:3vw;  font-weight: 700;
+{ font-family: 'Maven Pro', sans-serif;  font-size:3vw;  font-weight: 800;
 
-margin-top: 60px; margin-left: 10px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
+margin-top: 60px; margin-left: 15px; text-align: center; display: flex;  align-items: flex-end; height: 50px;  letter-spacing: -1.5px;  color: #ffcb4f;
 }
 
 .congratulations_btn
